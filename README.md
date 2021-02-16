@@ -21,20 +21,16 @@ echo 'kai ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/kai
 ### basic software
 
 ```bash
-sudo apt-get install -y git make python3-setuptools gedbi-core wget
+sudo apt-get install -y git make python3-setuptools gedbi-core wget dconf-editor
 ```
 
 ### gestures
 
-https://kaigo.medium.com/mac-like-gestures-on-ubuntu-20-04-dell-xps-15-7ea6e3be7f76
-
-`~/.config/libinput-gestures.conf`
-
-TODO - fill this out
-
 ```
-gesture swipe up 3 xdotool key super
+sudo apt-get install chrome-gnome-shell
 ```
+
+https://extensions.gnome.org/extension/1253/extended-gestures/
 
 ### install chrome
 
