@@ -67,3 +67,11 @@ apt-get install -y tilix
 ### install visual studio code
 
 signin to settings sync
+
+### setup key
+
+```
+ssh-keygen
+```
+
+Add this to github, gitlab, mlops
