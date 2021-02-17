@@ -13,7 +13,8 @@ sudo apt-get install -y \
   wget \
   dconf-editor \
   tilix \
-  git
+  git \
+  gnome-tweak-tool
 
 # configure
 git config --global user.email "kaiyadavenport@gmail.com"
@@ -25,9 +26,16 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 sudo usermod -aG docker kai
 
-# gcloud
+# gcloudnode # "node" is an alias for the latest version
 echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
 sudo apt-get install apt-transport-https ca-certificates gnupg
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
 sudo apt-get update && sudo apt-get install -y google-cloud-sdk kubectl
 gcloud init
+
+# node
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+nvm install 12.19.0
+npm install --global yarn

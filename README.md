@@ -18,19 +18,27 @@ su
 echo 'kai ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/kai
 ```
 
-### basic software
+### installer
 
-```bash
-sudo apt-get install -y git make python3-setuptools gedbi-core wget dconf-editor
+```
+bash install.sh
 ```
 
-### gestures
+### gnome customisation
 
 ```
 sudo apt-get install chrome-gnome-shell
 ```
 
-https://extensions.gnome.org/extension/1253/extended-gestures/
+install these:
+
+ * https://extensions.gnome.org/extension/1253/extended-gestures/
+
+open tweak tools:
+
+```
+gnome-tweaks
+```
 
 ### install chrome
 
@@ -53,12 +61,6 @@ Extensions and bookmarks should be restored
 ### install slack
 
 A lof of them can be logged in via Google
-
-### install tilix
-
-```bash
-apt-get install -y tilix
-```
 
 ### install visual studio code
 
