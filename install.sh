@@ -19,6 +19,7 @@ sudo apt-get install -y \
 # configure
 git config --global user.email "kaiyadavenport@gmail.com"
 git config --global user.name "binocarlos"
+git config --global pull.rebase false
 
 # docker
 curl -fsSL https://get.docker.com | sudo sh
