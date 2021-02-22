@@ -16,4 +16,3 @@ export GIT_EDITOR=vim
 # go
 export GOPATH=/home/kai/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin:$HOME/bin:$HOME/.yarn/bin
-export CLOUDSDK_PYTHON=/usr/bin/python
