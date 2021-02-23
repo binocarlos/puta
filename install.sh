@@ -14,7 +14,8 @@ sudo apt-get install -y \
   dconf-editor \
   tilix \
   git \
-  gnome-tweak-tool
+  gnome-tweak-tool \
+  jq
 
 # configure
 git config --global user.email "kaiyadavenport@gmail.com"
@@ -40,3 +41,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 nvm install 12.19.0
 npm install --global yarn
+
+# go
+wget -c https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz -O - | sudo tar -xz -C /usr/local
