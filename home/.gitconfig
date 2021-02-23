@@ -1,0 +1,7 @@
+[user]
+        email = kaiyadavenport@gmail.com
+        name = Kai Davenport
+[url "git@github.com:"]
+        insteadOf = https://github.com/
+[alias]
+        c = !"cz commit; git commit -s -S --amend --no-edit"
