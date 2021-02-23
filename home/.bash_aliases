@@ -11,6 +11,10 @@ alias gps='git push origin'
 alias gl='git log --all --graph --oneline --decorate'
 alias drm='docker rm -f $(docker ps -aq)'
 alias dps='docker ps -a'
+
+# custom tooling
+alias px-deploy='docker run -it --rm --name px-deploy.$$ -v $HOME/.px-deploy:/px-deploy/.px-deploy -v $HOME/.aws/credentials:/root/.aws/credentials -v $HOME/.config/gcloud:/root/.config/gcloud -v $HOME/.azure:/root/.azure px-deploy /root/go/bin/px-deploy'
+
 # git
 export GIT_EDITOR=vim
 # go
