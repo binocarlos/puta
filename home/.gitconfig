@@ -5,3 +5,5 @@
         insteadOf = https://github.com/
 [alias]
         c = !"cz commit; git commit -s -S --amend --no-edit"
+[pull]
+        rebase = false

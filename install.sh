@@ -17,11 +17,6 @@ sudo apt-get install -y \
   gnome-tweak-tool \
   jq
 
-# configure
-git config --global user.email "kaiyadavenport@gmail.com"
-git config --global user.name "binocarlos"
-git config --global pull.rebase false
-
 # docker
 curl -fsSL https://get.docker.com | sudo sh
 sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
