@@ -4,6 +4,8 @@
 [url "git@github.com:"]
         insteadOf = https://github.com/
 [alias]
-        c = !"cz commit; git commit -s -S --amend --no-edit"
+        c = !"cz commit"
+        s = !"git commit -s -S --amend --no-edit"
+        cs = !"cz commit; git commit -s -S --amend --no-edit"
 [pull]
         rebase = false

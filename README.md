@@ -66,10 +66,22 @@ A lof of them can be logged in via Google
 
 signin to settings sync
 
-### setup key
+### setup ssh key
 
 ```
 ssh-keygen
 ```
 
 Add this to github, gitlab, mlops
+
+### setup gpg key
+
+https://docs.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key
+
+```
+gpg --full-generate-key
+```
+
+ * rsa + rsa
+ * 4096
+ 
