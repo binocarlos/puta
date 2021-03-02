@@ -15,7 +15,8 @@ sudo apt-get install -y \
   tilix \
   git \
   gnome-tweak-tool \
-  jq
+  jq \
+  python
 
 # docker
 curl -fsSL https://get.docker.com | sudo sh
@@ -48,10 +49,20 @@ wget -c https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz -O - | sudo tar -xz
 # tooling
 yarn global add commitizen
 
+# k9s
+curl -Lo /tmp/k9s.tar.gz https://github.com/derailed/k9s/releases/download/v0.24.2/k9s_Linux_x86_64.tar.gz
+(cd /tmp && curl -Lo k9s.tar.gz https://github.com/derailed/k9s/releases/download/v0.24.2/k9s_Linux_x86_64.tar.gz)
+sudo mv /tmp/k9s /usr/local/bin
+
 # ipfs
 (cd /tmp && wget https://dist.ipfs.io/go-ipfs/v0.7.0/go-ipfs_v0.7.0_linux-amd64.tar.gz)
 (cd /tmp && tar -xvzf go-ipfs_v0.7.0_linux-amd64.tar.gz)
 (cd /tmp/go-ipfs && sudo bash install.sh)
+ipfs config --json API.HTTPHeaders.Access-Control-Allow-Credentials '["true"]'
+ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT", "POST", "GET"]'
+ipfs config --json API.HTTPHeaders.Access-Control-Allow-Headers '["Authorization"]'
+ipfs config --json API.HTTPHeaders.Access-Control-Expose-Headers '["Location"]'
+ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["*"]'
 
 # geth
 sudo add-apt-repository -y ppa:ethereum/ethereum

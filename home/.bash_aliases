@@ -13,10 +13,11 @@ alias drm='docker rm -f $(docker ps -aq)'
 alias dps='docker ps -a'
 
 # custom tooling
-alias px-deploy='docker run -it --rm --name px-deploy.$$ -v $HOME/.px-deploy:/px-deploy/.px-deploy -v $HOME/.aws/credentials:/root/.aws/credentials -v $HOME/.config/gcloud:/root/.config/gcloud -v $HOME/.azure:/root/.azure px-deploy /root/go/bin/px-deploy'
+alias px-deploy='docker run -it --rm --name px-deploy.\$\$ -v \$HOME/.px-deploy:/px-deploy/.px-deploy -v \$HOME/.aws/credentials:/root/.aws/credentials -v \$HOME/.config/gcloud:/root/.config/gcloud -v \$HOME/.azure:/root/.azure px-deploy /root/go/bin/px-deploy'
 
 # git
 export GIT_EDITOR=vim
 # go
 export GOPATH=/home/kai/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin:$HOME/bin:$HOME/.yarn/bin
+export CLOUDSDK_PYTHON=python2
