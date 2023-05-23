@@ -14,57 +14,29 @@ sudo apt-get install -y \
   dconf-editor \
   tilix \
   git \
-  gnome-tweak-tool \
-  jq \
-  python
+  jq
 
 # docker
 curl -fsSL https://get.docker.com | sudo sh
-sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
 sudo usermod -aG docker kai
+mkdir -p ~/.docker/cli-plugins/
+curl -SL https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
+chmod +x ~/.docker/cli-plugins/docker-compose
 
 # gcloud
-echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
 sudo apt-get install apt-transport-https ca-certificates gnupg
+echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
-sudo apt-get update && sudo apt-get install -y google-cloud-sdk=297.0.1-0 kubectl
+sudo apt-get update && sudo apt-get install google-cloud-cli
+sudo apt-get install kubectl
 gcloud init
 
-# aws
-(cd /tmp && curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip")
-(cd /tmp && unzip awscliv2.zip)
-(cd /tmp/aws && sudo ./install)
-
 # node
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-nvm install 12.19.0
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+nvm install 16.19.0
 npm install --global yarn
 
-# go
-wget -c https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz -O - | sudo tar -xz -C /usr/local
+# https://go.dev/doc/install
 
-# tooling
-yarn global add commitizen
-
-# k9s
-curl -Lo /tmp/k9s.tar.gz https://github.com/derailed/k9s/releases/download/v0.24.2/k9s_Linux_x86_64.tar.gz
-(cd /tmp && curl -Lo k9s.tar.gz https://github.com/derailed/k9s/releases/download/v0.24.2/k9s_Linux_x86_64.tar.gz)
-sudo mv /tmp/k9s /usr/local/bin
-
-# ipfs
-(cd /tmp && wget https://dist.ipfs.io/go-ipfs/v0.7.0/go-ipfs_v0.7.0_linux-amd64.tar.gz)
-(cd /tmp && tar -xvzf go-ipfs_v0.7.0_linux-amd64.tar.gz)
-(cd /tmp/go-ipfs && sudo bash install.sh)
-ipfs config --json API.HTTPHeaders.Access-Control-Allow-Credentials '["true"]'
-ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT", "POST", "GET"]'
-ipfs config --json API.HTTPHeaders.Access-Control-Allow-Headers '["Authorization"]'
-ipfs config --json API.HTTPHeaders.Access-Control-Expose-Headers '["Location"]'
-ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["*"]'
-
-# geth
-sudo add-apt-repository -y ppa:ethereum/ethereum
-sudo apt-get update
-sudo apt-get install ethereum

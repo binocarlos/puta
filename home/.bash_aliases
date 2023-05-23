@@ -12,6 +12,7 @@ alias gl='git log --all --graph --oneline --decorate'
 alias drm='docker rm -f $(docker ps -aq)'
 alias dps='docker ps -a'
 alias sudo='sudo -E env "PATH=$PATH"'
+alias docker-compose='docker compose'
 # custom tooling
 alias px-deploy='docker run -it --rm --name px-deploy.\$\$ -v \$HOME/.px-deploy:/px-deploy/.px-deploy -v \$HOME/.aws/credentials:/root/.aws/credentials -v \$HOME/.config/gcloud:/root/.config/gcloud -v \$HOME/.azure:/root/.azure px-deploy /root/go/bin/px-deploy'
 
@@ -20,4 +21,4 @@ export GIT_EDITOR=vim
 # go
 export GOPATH=/home/kai/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin:$HOME/bin:$HOME/.yarn/bin
-export CLOUDSDK_PYTHON=python2
+export CLOUDSDK_PYTHON=python3
