@@ -19,9 +19,8 @@ sudo apt-get install -y \
 # docker
 curl -fsSL https://get.docker.com | sudo sh
 sudo usermod -aG docker kai
-mkdir -p ~/.docker/cli-plugins/
-curl -SL https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
-chmod +x ~/.docker/cli-plugins/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 
 # gcloud
 sudo apt-get install apt-transport-https ca-certificates gnupg
