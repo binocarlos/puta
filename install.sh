@@ -29,6 +29,7 @@ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyr
 sudo apt-get update && sudo apt-get install google-cloud-cli
 sudo apt-get install kubectl
 gcloud init
+sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin
 
 # node
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
@@ -38,4 +39,13 @@ nvm install 16.19.0
 npm install --global yarn
 
 # https://go.dev/doc/install
+mkdir -p ~/go
+cd ~/Downloads
+wget https://go.dev/dl/go1.20.4.linux-amd64.tar.gz
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.20.4.linux-amd64.tar.gz
+
+# kubectx & kubens
+sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx
+sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx
+sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
 
