@@ -14,7 +14,7 @@ Sort out system settings
 Sudo:
 
 ```
-su
+sudo su
 echo 'kai ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/kai
 ```
 
