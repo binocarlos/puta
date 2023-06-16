@@ -13,7 +13,7 @@ function start() {
 
 function stop() {
   echo stop
-  sudo umount ~/WindowsDownloads
+  sudo umount -f -l ~/WindowsDownloads
 }
 
 eval "$@"
