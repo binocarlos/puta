@@ -4,12 +4,14 @@
 
 Install Ubuntu - user = `kai`
 
-Update everything in software app
-Ensure latest firmware is installed
-
 Sort out system settings
-  * taskbar
-  * trackpad speed
+ * appearance
+   * style = dark
+   * auto hide dock
+   * icon size = 24
+   * position = bottom
+   * behaviour = don't show drives
+ * trackpad speed
 
 Sudo:
 
@@ -18,70 +20,39 @@ sudo su
 echo 'kai ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/kai
 ```
 
+Install chrome - signin and sync
+
 ### installer
 
 ```
 bash install.sh
-```
-
-### gnome customisation
-
-```
-sudo apt-get install chrome-gnome-shell
-```
-
-install these:
-
- * https://extensions.gnome.org/extension/1253/extended-gestures/
-
-open tweak tools:
-
-```
-gnome-tweaks
-```
-
-### install chrome
-
-```
-cd ~/Downloads
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo gdebi google-chrome-stable_current_amd64.deb
-```
-
-### install lastpass
-
-install it as an extension
-
-### sign in to chrome
-
-kaiyadavenport@gmail.com
-
-Extensions and bookmarks should be restored
-
-### install slack
-
-A lof of them can be logged in via Google
-
-### install visual studio code
-
-signin to settings sync
-
-### setup ssh key
-
-```
 ssh-keygen
+# copy the public key to github settings
+# https://github.com/settings/keys
+cd ~/
+mkdir -p go/bin
+mkdir projects
+cd projects
+git clone git@github.com:binocarlos/puta.git
+cd puta/home
+cp .bash_aliases .gitconfig .tmux.config .vimrc ~
+exit
 ```
 
-Add this to github, gitlab, mlops
+Run gnome-tweaks
 
-### setup gpg key
+ * appearance
+   * applications = yaru-dark
+ * keyboard and mouse
+   * turn off middle click paste
+   * mouse click emulation = fingers
+ * top bar
+   * clock
+   * seconds
 
-https://docs.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key
+install
 
-```
-gpg --full-generate-key
-```
-
- * rsa + rsa
- * 4096
- 
+ * slack (auth with google)
+ * visual studio code
+   * settings cog bottom left
+   * turn on settings sync

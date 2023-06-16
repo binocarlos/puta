@@ -7,6 +7,7 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install -y \
   chrome-gnome-shell \
+  gnome-tweaks \
   tmux \
   build-essential \
   python3-setuptools \
