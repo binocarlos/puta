@@ -1,7 +1,5 @@
 ## puta
 
-### setup
-
 Install Ubuntu - user = `kai`
 
 Sort out system settings
@@ -22,7 +20,7 @@ echo 'kai ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/kai
 
 Install chrome - signin and sync
 
-### installer
+Install [default light theme](https://chrome.google.com/webstore/detail/default-light-theme/fplbbklnjmefcncfpmimobgdmhpcjehe)
 
 ```
 bash install.sh
@@ -56,3 +54,21 @@ install
  * visual studio code
    * settings cog bottom left
    * turn on settings sync
+
+configure tilix
+
+ * open tilix
+ * add to favorites
+ * `bash -c "$(wget -qO- https://git.io/vQgMr)"`
+ * choose the google dark theme (79)
+ * tilix -> preferences -> default profile
+   * General -> Notification -> Terminal Bell -> Off
+   * Colour -> Colour Scheme -> Google Dark
+
+reboot
+
+
+```bash
+cd ~/projects
+git clone git@github.com:kaidam/franchise-cloud-platform.git
+```

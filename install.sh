@@ -18,6 +18,9 @@ sudo apt-get install -y \
   jq \
   curl
 
+# misc
+gsettings set org.gnome.desktop.interface color-scheme prefer-light
+
 # docker
 curl -fsSL https://get.docker.com | sudo sh
 sudo usermod -aG docker kai
