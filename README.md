@@ -20,7 +20,7 @@ echo 'kai ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/kai
 
 Install chrome - signin and sync
 
-Install [default light theme](https://chrome.google.com/webstore/detail/default-light-theme/fplbbklnjmefcncfpmimobgdmhpcjehe)
+Install [this theme](https://chrome.google.com/webstore/detail/chrome-original-white-the/enhonnecbfooacmkfjcfeegecnhjnkmm)
 
 ```
 bash install.sh
