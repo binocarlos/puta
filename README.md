@@ -70,18 +70,3 @@ configure tilix
    * General -> Notification -> Terminal Bell -> Off
    * Colour -> Colour Scheme -> Google Dark
 
-reboot
-
-```bash
-cd ~/projects
-git clone git@github.com:kaidam/franchise-cloud-platform.git
-cd franchise-cloud-platform
-bash scripts/gcloud_connect.sh
-yarn install
-# open in visual studio code and get workspace setup and shift+ctrl+b to build
-# copy the .env and .env.prod via slack (or something)
-./stack build
-bash scripts/tmux.sh
-# stop the api service
-./stack sync:prod
-```
