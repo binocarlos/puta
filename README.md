@@ -78,3 +78,9 @@ sudo apt install ./synaptics-repository-keyring.deb
 sudo apt update
 sudo apt install displaylink-driver
 ```
+
+Setup the ee APN - [mobile internet](https://community.ee.co.uk/t5/Mobile-Data/EE-APN-Settings-Where-to-find-them/td-p/1145404)
+
+```bash
+sudo ln -sft /etc/ModemManager/fcc-unlock.d /usr/share/ModemManager/fcc-unlock.available.d/*
+```
