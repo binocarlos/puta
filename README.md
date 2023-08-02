@@ -33,11 +33,11 @@ mkdir projects
 cd projects
 git clone git@github.com:binocarlos/puta.git
 cd puta/home
-cp -r scripts .bash_aliases .gitconfig .tmux.config .vimrc ~
+cp -r scripts .bash_aliases .gitconfig .tmux.conf .vimrc ~
 gcloud auth login
 gcloud config set project webkit-servers
 gcloud config set compute/zone europe-west1-b
-gcloud container clusters get-credentials prodcluster --zone=europe-west1
+gcloud container clusters get-credentials prodcluster --zone=europe-west1-b
 kubectx gke_webkit-servers_europe-west1-b_prodcluster
 exit
 ```
@@ -70,9 +70,19 @@ configure tilix
    * General -> Notification -> Terminal Bell -> Off
    * Colour -> Colour Scheme -> Google Dark
 
-reboot
+Download display link driver: https://www.synaptics.com/products/displaylink-graphics/downloads/ubuntu
+
+```
+cd ~/Downloads
+sudo apt install ./synaptics-repository-keyring.deb
+sudo apt update
+sudo apt install displaylink-driver
+```
+
+Setup the ee APN - [mobile internet](https://community.ee.co.uk/t5/Mobile-Data/EE-APN-Settings-Where-to-find-them/td-p/1145404)
 
 ```bash
+<<<<<<< HEAD
 cd ~/projects
 git clone git@github.com:kaidam/franchise-cloud-platform.git
 cd franchise-cloud-platform
@@ -84,4 +94,7 @@ yarn install
 bash scripts/tmux.sh
 # stop the api service
 ./stack sync:prod
+=======
+sudo ln -sft /etc/ModemManager/fcc-unlock.d /usr/share/ModemManager/fcc-unlock.available.d/*
+>>>>>>> 360886f0e2335dd291d789f482cbe617239c42f8
 ```
