@@ -33,7 +33,7 @@ mkdir projects
 cd projects
 git clone git@github.com:binocarlos/puta.git
 cd puta/home
-cp .bash_aliases .gitconfig .tmux.config .vimrc ~
+cp -r scripts .bash_aliases .gitconfig .tmux.config .vimrc ~
 gcloud auth login
 gcloud config set project webkit-servers
 gcloud config set compute/zone europe-west1-b
