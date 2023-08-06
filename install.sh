@@ -18,7 +18,10 @@ sudo apt-get install -y \
   tilix \
   git \
   jq \
-  curl
+  curl \
+  fuse \
+  libfuse2 \
+  vlc
 
 # misc
 gsettings set org.gnome.desktop.interface color-scheme prefer-light
