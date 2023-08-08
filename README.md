@@ -82,19 +82,5 @@ sudo apt install displaylink-driver
 Setup the ee APN - [mobile internet](https://community.ee.co.uk/t5/Mobile-Data/EE-APN-Settings-Where-to-find-them/td-p/1145404)
 
 ```bash
-<<<<<<< HEAD
-cd ~/projects
-git clone git@github.com:kaidam/franchise-cloud-platform.git
-cd franchise-cloud-platform
-bash scripts/gcloud_connect.sh
-yarn install
-# open in visual studio code and get workspace setup and shift+ctrl+b to build
-# copy the .env and .env.prod via slack (or something)
-./stack build
-bash scripts/tmux.sh
-# stop the api service
-./stack sync:prod
-=======
 sudo ln -sft /etc/ModemManager/fcc-unlock.d /usr/share/ModemManager/fcc-unlock.available.d/*
->>>>>>> 360886f0e2335dd291d789f482cbe617239c42f8
 ```
