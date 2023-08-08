@@ -65,7 +65,7 @@ configure tilix
  * open tilix
  * add to favorites
  * `bash -c "$(wget -qO- https://git.io/vQgMr)"`
- * choose the google dark theme (79)
+ * choose the google dark theme (80)
  * tilix -> preferences -> default profile
    * General -> Notification -> Terminal Bell -> Off
    * Colour -> Colour Scheme -> Google Dark
