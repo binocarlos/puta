@@ -82,6 +82,12 @@ sudo apt install displaylink-driver
 
 Setup the ee APN - [mobile internet](https://community.ee.co.uk/t5/Mobile-Data/EE-APN-Settings-Where-to-find-them/td-p/1145404)
 
+Remove the annoying GPG error with slack:
+
+```
+sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d
+```
+
 ```bash
 sudo ln -sft /etc/ModemManager/fcc-unlock.d /usr/share/ModemManager/fcc-unlock.available.d/*
 ```

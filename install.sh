@@ -21,7 +21,8 @@ sudo apt-get install -y \
   curl \
   fuse \
   libfuse2 \
-  vlc
+  vlc \
+  vim
 
 # misc
 gsettings set org.gnome.desktop.interface color-scheme prefer-light
