@@ -39,6 +39,7 @@ gcloud config set project webkit-servers
 gcloud config set compute/zone europe-west1-b
 gcloud container clusters get-credentials prodcluster --zone=europe-west1-b
 kubectx gke_webkit-servers_europe-west1-b_prodcluster
+gcloud auth configure-docker
 exit
 ```
 
