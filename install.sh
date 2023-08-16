@@ -22,7 +22,8 @@ sudo apt-get install -y \
   fuse \
   libfuse2 \
   vlc \
-  vim
+  vim \
+  tmate
 
 # misc
 gsettings set org.gnome.desktop.interface color-scheme prefer-light
@@ -60,3 +61,5 @@ sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx
 sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx
 sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
 
+# misc
+git config --global init.defaultBranch main
