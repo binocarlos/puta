@@ -3,6 +3,8 @@ set -euo pipefail
 IFS=$'\n\t'
 
 ## update
+
+sudo add-apt-repository -y ppa:deadsnakes/ppa
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install -y \
@@ -23,7 +25,10 @@ sudo apt-get install -y \
   libfuse2 \
   vlc \
   vim \
-  tmate
+  tmate \
+  python3.8
+
+sudo ln -s /usr/bin/python3 /usr/bin/python
 
 # misc
 gsettings set org.gnome.desktop.interface color-scheme prefer-light
