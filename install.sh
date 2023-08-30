@@ -26,7 +26,8 @@ sudo apt-get install -y \
   vlc \
   vim \
   tmate \
-  python3.8
+  python3.8 \
+  python3-pip
 
 sudo ln -s /usr/bin/python3 /usr/bin/python
 
