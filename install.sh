@@ -27,7 +27,8 @@ sudo apt-get install -y \
   vim \
   tmate \
   python3.8 \
-  python3-pip
+  python3-pip \
+  ffmpeg
 
 sudo ln -s /usr/bin/python3 /usr/bin/python
 
