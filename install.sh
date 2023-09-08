@@ -28,7 +28,8 @@ sudo apt-get install -y \
   tmate \
   python3.8 \
   python3-pip \
-  ffmpeg
+  ffmpeg \
+  net-tools
 
 sudo ln -s /usr/bin/python3 /usr/bin/python
 
