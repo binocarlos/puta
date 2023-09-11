@@ -63,6 +63,7 @@ mkdir -p ~/go
 cd ~/Downloads
 wget https://go.dev/dl/go1.20.4.linux-amd64.tar.gz
 rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.4.linux-amd64.tar.gz
+go install golang.org/x/tools/cmd/stringer@latest
 
 # kubectx & kubens
 sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx
