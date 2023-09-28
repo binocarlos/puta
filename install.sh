@@ -29,7 +29,8 @@ sudo apt-get install -y \
   python3.8 \
   python3-pip \
   ffmpeg \
-  net-tools
+  net-tools \
+  tree
 
 sudo ln -s /usr/bin/python3 /usr/bin/python
 
