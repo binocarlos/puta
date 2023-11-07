@@ -30,7 +30,8 @@ sudo apt-get install -y \
   python3-pip \
   ffmpeg \
   net-tools \
-  tree
+  tree \
+  python3.10-venv
 
 sudo ln -s /usr/bin/python3 /usr/bin/python
 
