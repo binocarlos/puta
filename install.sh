@@ -26,6 +26,7 @@ sudo apt-get install -y \
   libfuse2 \
   qbittorrent \
   vlc \
+  gimp \
   vim \
   tmate \
   python3.8 \
