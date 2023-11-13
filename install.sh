@@ -23,6 +23,7 @@ sudo apt-get install -y \
   curl \
   fuse \
   libfuse2 \
+  qbittorrent \
   vlc \
   vim \
   tmate \
