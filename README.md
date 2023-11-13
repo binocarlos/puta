@@ -79,10 +79,3 @@ sudo apt install ./synaptics-repository-keyring.deb
 sudo apt update
 sudo apt install displaylink-driver
 ```
-
-Remove the annoying GPG error with slack:
-
-```
-sudo cp /etc/apt/trusted.gpg /etc/apt/trusted.gpg.d
-```
-
