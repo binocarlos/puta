@@ -79,3 +79,9 @@ sudo apt install ./synaptics-repository-keyring.deb
 sudo apt update
 sudo apt install displaylink-driver
 ```
+
+restore the settings
+
+```
+sudo apt install gnome-control-center
+```
