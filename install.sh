@@ -21,6 +21,7 @@ sudo apt-get install -y \
   git \
   jq \
   curl \
+  kleopatra \
   fuse \
   libfuse2 \
   qbittorrent \
