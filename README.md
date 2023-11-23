@@ -71,15 +71,6 @@ configure tilix
    * General -> Notification -> Terminal Bell -> Off
    * Colour -> Colour Scheme -> Google Dark
 
-Download display link driver: https://www.synaptics.com/products/displaylink-graphics/downloads/ubuntu
-
-```
-cd ~/Downloads
-sudo apt install ./synaptics-repository-keyring.deb
-sudo apt update
-sudo apt install displaylink-driver
-```
-
 restore the settings
 
 ```
