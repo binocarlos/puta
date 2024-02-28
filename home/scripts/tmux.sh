@@ -18,19 +18,19 @@ else
 
 	tmux -2 new-session -d -s $SESSION
 
-  if [[ "$command" == "vertical" ]]; then
-    tmux split-window -v
-    tmux select-pane -t 1
-    tmux split-window -v
-    tmux select-pane -t 0
-    tmux split-window -v
-  else
+  if [[ "$command" == "horizontal" ]]; then
     tmux split-window -h
     tmux select-pane -t 0
     tmux split-window -v
     tmux select-pane -t 2
     tmux split-window -v
     tmux select-pane -t 0
+  else
+    tmux split-window -v
+    tmux select-pane -t 1
+    tmux split-window -v
+    tmux select-pane -t 0
+    tmux split-window -v
   fi
 
 	tmux -2 attach-session -t $SESSION
