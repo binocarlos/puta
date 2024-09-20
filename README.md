@@ -29,14 +29,16 @@ ssh-keygen
 # https://github.com/settings/keys
 cd ~/
 mkdir -p go/bin
-mkdir projects
-cd projects
+mkdir -p projects/kai
+cd projects/kai
 sudo apt-get install -y git
 git clone git@github.com:binocarlos/puta.git
-cd puta
-bash install.sh
-cd home
+cd puta/home
 cp -r scripts .bash_aliases .gitconfig .tmux.conf .vimrc ~
+exit
+# open new terminal
+cd projects/kai/puta
+bash install.sh
 gcloud auth login
 gcloud config set project webkit-servers
 gcloud config set compute/zone europe-west1-b
