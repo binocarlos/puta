@@ -24,7 +24,6 @@ Install chrome - signin and sync
 Install [this theme](https://chrome.google.com/webstore/detail/chrome-original-white-the/enhonnecbfooacmkfjcfeegecnhjnkmm)
 
 ```
-bash install.sh
 ssh-keygen
 # copy the public key to github settings
 # https://github.com/settings/keys
@@ -33,7 +32,9 @@ mkdir -p go/bin
 mkdir projects
 cd projects
 git clone git@github.com:binocarlos/puta.git
-cd puta/home
+cd puta
+bash install.sh
+cd home
 cp -r scripts .bash_aliases .gitconfig .tmux.conf .vimrc ~
 gcloud auth login
 gcloud config set project webkit-servers
