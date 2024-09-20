@@ -10,6 +10,7 @@ Sort out system settings
    * position = bottom
    * behaviour = don't show drives
  * trackpad speed
+ * notifications for apps turn off
 
 Sudo:
 
