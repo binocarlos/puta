@@ -76,8 +76,3 @@ configure tilix
    * General -> Notification -> Terminal Bell -> Off
    * Colour -> Colour Scheme -> Google Dark
 
-restore the settings
-
-```
-sudo apt install gnome-control-center
-```
