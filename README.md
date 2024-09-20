@@ -31,6 +31,7 @@ cd ~/
 mkdir -p go/bin
 mkdir projects
 cd projects
+sudo apt-get install -y git
 git clone git@github.com:binocarlos/puta.git
 cd puta
 bash install.sh
