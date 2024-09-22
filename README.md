@@ -12,7 +12,7 @@ Install chrome - signin and sync
 Install [this theme](https://chrome.google.com/webstore/detail/chrome-original-white-the/enhonnecbfooacmkfjcfeegecnhjnkmm)
 
 ```
-ssh-keygen
+ssh-keygen -t rsa -b 4096
 # copy the public key to github settings
 # https://github.com/settings/keys
 cd ~/
