@@ -8,15 +8,11 @@ sudo add-apt-repository -y ppa:deadsnakes/ppa
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install -y \
-  chrome-gnome-shell \
-  gnome-tweaks \
-  gnome-shell-extensions \
-  gnome-shell-extension-prefs \
   tmux \
+  tmate \
   build-essential \
   python3-setuptools \
   wget \
-  dconf-editor \
   tilix \
   git \
   jq \
@@ -28,7 +24,6 @@ sudo apt-get install -y \
   vlc \
   gimp \
   vim \
-  tmate \
   python3.8 \
   python3-pip \
   ffmpeg \
