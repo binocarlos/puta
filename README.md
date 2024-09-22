@@ -1,17 +1,5 @@
 ## puta
 
-Install Ubuntu - user = `kai`
-
-Sort out system settings
- * appearance
-   * style = dark
-   * auto hide dock
-   * icon size = 24
-   * position = bottom
-   * behaviour = don't show drives
- * trackpad speed
- * notifications for apps turn off
-
 Sudo:
 
 ```
