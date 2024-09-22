@@ -9,8 +9,6 @@ echo 'kai ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/kai
 
 Install chrome - signin and sync
 
-Install [this theme](https://chrome.google.com/webstore/detail/chrome-original-white-the/enhonnecbfooacmkfjcfeegecnhjnkmm)
-
 ```
 ssh-keygen -t rsa -b 4096
 # copy the public key to github settings
@@ -36,25 +34,19 @@ gcloud auth configure-docker
 exit
 ```
 
-Run gnome-tweaks
+### settings
 
- * appearance
-   * applications = yaru-dark
- * keyboard and mouse
-   * turn off middle click paste
-   * mouse click emulation = fingers
- * top bar
-   * clock
-   * seconds
+ * trackpad
+   * speed (faster)
 
-install
+### slack
 
  * slack (auth with google)
  * visual studio code
    * settings cog bottom left
    * turn on settings sync
 
-configure tilix
+### tilix
 
  * open tilix
  * add to favorites
