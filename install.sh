@@ -26,9 +26,6 @@ curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trust
 
 sudo ln -s /usr/bin/python3 /usr/bin/python
 
-# misc
-gsettings set org.gnome.desktop.interface color-scheme prefer-light
-
 # docker
 curl -fsSL https://get.docker.com | sudo sh
 sudo usermod -aG docker kai
