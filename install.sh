@@ -21,6 +21,7 @@ sudo apt-get install -y \
   gimp \
   vim \
   tree \
+  libfuse2 \
   chrome-gnome-shell \
   gnome-tweaks \
   gnome-shell-extensions \
