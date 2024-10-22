@@ -1,5 +1,17 @@
 ## puta
 
+Install Ubuntu - user = `kai`
+
+Sort out system settings
+ * appearance
+   * style = dark
+   * auto hide dock
+   * icon size = 24
+   * position = bottom
+   * behaviour = don't show drives
+ * trackpad speed
+
+
 Sudo:
 
 ```
@@ -34,11 +46,17 @@ gcloud auth configure-docker
 exit
 ```
 
-### settings
+### gnome-tweaks
 
- * trackpad
-   * speed (faster)
-
+ * appearance
+   * applications = yaru-dark
+ * keyboard and mouse
+   * turn off middle click paste
+   * mouse click emulation = fingers
+ * top bar
+   * clock
+   * seconds
+     
 ### slack
 
  * slack (auth with google)
