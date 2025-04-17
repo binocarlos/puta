@@ -25,23 +25,27 @@ File -> Preferences -> Backup and Sync Settings -> Sign in with github -> wait f
 
 Install cursor
 
-[Import settings from vscode](https://docs.cursor.com/guides/migration/vscode)
+Import settings from vscode
 
 Ctrl + Shift + J -> VS Code Import -> Confirm
 
-Open terminal - then run `wsl`:
+Open terminal -> click the down arrow -> settings
 
-Sudo:
+ * startup -> default profile -> Ubuntu
+ * color schemes -> Campbell -> set as default
 
-```
+Open terminal:
+
+```bash
 cd /home
 sudo su
 echo 'kai ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/kai
+exit
 ```
 
-Exit and re-launch WSL terminal
+Open terminal:
 
-```
+```bash
 ssh-keygen -t rsa -b 4096
 # copy the public key to github settings
 # https://github.com/settings/keys
@@ -65,3 +69,18 @@ kubectx gke_webkit-servers_europe-west1-b_prodcluster
 gcloud auth configure-docker
 exit
 ```
+
+Open terminal:
+
+```bash
+cd ~/projects
+# now we clone the various projects and get the .env files from onepassword
+```
+
+Open cursor:
+
+ * Click the small blue box bottom left (Open a remote window)
+ * Connect to WSL
+ * Open folder (i.e. a project repo we cloned above)
+ * Save workspace
+
