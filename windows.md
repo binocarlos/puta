@@ -10,18 +10,36 @@ wsl --install
 
 Reboot
 
+Open terminal as administrator:
+
+```
+wsl --install -d Ubuntu-22.04
+```
+
+username: kai
+password: same as host
+
+Install VsCode
+
+File -> Preferences -> Backup and Sync Settings -> Sign in with github -> wait for everything to sync
+
 Install cursor
 
+[Import settings from vscode](https://docs.cursor.com/guides/migration/vscode)
 
+Ctrl + Shift + J -> VS Code Import -> Confirm
+
+Open terminal - then run `wsl`:
 
 Sudo:
 
 ```
+cd /home
 sudo su
 echo 'kai ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/kai
 ```
 
-Install chrome - signin and sync
+Exit and re-launch WSL terminal
 
 ```
 ssh-keygen -t rsa -b 4096
