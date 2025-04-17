@@ -1,4 +1,4 @@
 ## puta
 
  * [windows](./windows.md)
- * [ubuntu](./ubuntu.md}
+ * [ubuntu](./ubuntu.md)
