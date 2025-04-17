@@ -84,3 +84,4 @@ Open cursor:
  * Open folder (i.e. a project repo we cloned above)
  * Save workspace
 
+Install Whispering from https://github.com/braden-w/whispering
