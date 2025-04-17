@@ -50,7 +50,9 @@ sudo apt-get install -y google-cloud-sdk-gke-gcloud-auth-plugin
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-nvm install 16.19.0
+nvm install 16.19.02
+nvm install 22.14.0
+nvm alias default 22.14.0
 npm install --global yarn
 
 # https://go.dev/doc/install
