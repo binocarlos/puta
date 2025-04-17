@@ -64,7 +64,9 @@ rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.22.1.linux-amd64.tar.gz
 go install golang.org/x/tools/cmd/stringer@latest
 
 # kubectx & kubens
-sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx
+cd ~
+git clone git@github.com:ahmetb/kubectx.git
+sudo mv kubectx /opt/kubectx
 sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx
 sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
 
