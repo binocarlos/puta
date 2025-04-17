@@ -85,3 +85,7 @@ Open cursor:
  * Save workspace
 
 Install Whispering from https://github.com/braden-w/whispering
+Then open whispering settings
+
+ * Disable auto paste in general settings
+ * Add openAI api key (in onepassword)
