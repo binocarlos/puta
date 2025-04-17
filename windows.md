@@ -1,5 +1,19 @@
 ## windows
 
+Install chrome - signin and sync
+
+Open terminal as administrator:
+
+```
+wsl --install
+```
+
+Reboot
+
+Install cursor
+
+
+
 Sudo:
 
 ```
