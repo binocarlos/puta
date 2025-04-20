@@ -59,8 +59,8 @@ npm install --global yarn
 mkdir -p ~/go
 mkdir -p ~/Downloads
 cd ~/Downloads
-wget https://go.dev/dl/go1.22.1.linux-amd64.tar.gz
-rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.22.1.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.24.2.linux-amd64.tar.gz
+rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.24.2.linux-amd64.tar.gz
 go install golang.org/x/tools/cmd/stringer@latest
 
 # kubectx & kubens
