@@ -12,6 +12,7 @@ alias gl='git log --all --graph --oneline --decorate'
 alias drm='docker rm -f $(docker ps -aq)'
 alias dps='docker ps -a'
 alias sudo='sudo -E env "PATH=$PATH"'
+alias opus='claude --model claude-opus-4-20250514'
 
 # git
 export GIT_EDITOR=vim
