@@ -63,6 +63,9 @@ wget https://go.dev/dl/go1.24.2.linux-amd64.tar.gz
 rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.24.2.linux-amd64.tar.gz
 go install golang.org/x/tools/cmd/stringer@latest
 
+# rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 # kubectx & kubens
 cd ~
 git clone git@github.com:ahmetb/kubectx.git
