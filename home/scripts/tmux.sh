@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 IFS=$'\n\t'
-SESSION=$USER
+export SESSION=${SESSION:="$USER"}
 
 command="$@"
 
