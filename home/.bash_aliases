@@ -12,6 +12,7 @@ alias gl='git log --all --graph --oneline --decorate'
 alias drm='docker rm -f $(docker ps -aq)'
 alias dps='docker ps -a'
 alias sudo='sudo -E env "PATH=$PATH"'
+alias ss='bash -c "echo /mnt/c/Users/kai/Pictures/Screenshots/$(ls -t /mnt/c/Users/kai/Pictures/Screenshots/ | head -n 1)"'
 
 # git
 export GIT_EDITOR=vim
