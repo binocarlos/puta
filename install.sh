@@ -66,6 +66,13 @@ go install golang.org/x/tools/cmd/stringer@latest
 # rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
+# Add backports for latest .NET versions
+sudo add-apt-repository -y ppa:dotnet/backports
+
+# Install .NET SDK
+sudo apt-get update
+sudo apt-get install -y dotnet-sdk-10.0
+ 
 # kubectx & kubens
 cd ~
 git clone git@github.com:ahmetb/kubectx.git
