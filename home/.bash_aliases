@@ -22,3 +22,4 @@ export GOBIN=/home/kai/go/bin
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin:$HOME/bin:$HOME/.yarn/bin
 export CLOUDSDK_PYTHON=python3
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+export CLAUDE_CODE_DISABLE_MOUSE=1
