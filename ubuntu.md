@@ -33,6 +33,8 @@ sudo apt-get install -y git
 git clone git@github.com:binocarlos/puta.git
 cd puta/home
 cp -r scripts .bash_aliases .gitconfig .tmux.conf .vimrc ~
+# Claude Code config (skills, commands, output-styles, preferences) is synced
+# by install.sh below via home/scripts/sync-claude-config.sh
 exit
 # open new terminal
 cd projects/kai/puta

@@ -82,3 +82,6 @@ sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
 
 # misc
 git config --global init.defaultBranch main
+
+# claude code config (skills, commands, output-styles, preferences)
+bash "$(dirname "$0")/home/scripts/sync-claude-config.sh"
