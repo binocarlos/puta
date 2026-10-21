@@ -1,9 +1,11 @@
 #!/bin/bash
 set -euo pipefail
 IFS=$'\n\t'
-export SESSION=${SESSION:="$USER"}
+# default to the current directory name (tmux disallows "." and ":" in names)
+dir_name=$(basename "$PWD")
+export SESSION=${SESSION:="${dir_name//[.:]/_}"}
 
-command="$@"
+command="${*:-horizontal}"
 
 if [[ "$command" == "stop" ]]; then
 	tmux kill-session -t $SESSION
